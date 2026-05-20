@@ -85,4 +85,9 @@ The AI Roommate Matching System is now fully implemented with:
 - ✅ Real-time monitoring and status tracking
 - ✅ Scalable architecture for production use
 
+## Team Members
+- Tanya Gupta
+- Harneev Kaur
+  
+
 **The system is now production-ready!** 🎯  
