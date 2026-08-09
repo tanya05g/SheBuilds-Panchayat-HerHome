@@ -164,6 +164,9 @@ backend/app/temp/
 frontend/build/
 frontend/dist/
 
+# Allow tracked frontend public index.html
+!frontend/public/index.html
+
 # Secrets and API keys
 secrets.json
 config.json
