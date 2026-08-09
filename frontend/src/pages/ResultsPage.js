@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Users, Star, Home, Heart, AlertTriangle, Loader2, ArrowLeft } from 'lucide-react';
-import axios from 'axios';
+import api from '../api';
 
 const ResultsPage = () => {
   const { userId } = useParams();
@@ -20,7 +20,7 @@ const ResultsPage = () => {
       setLoading(true);
       
       // Fetch user data
-      const userResponse = await axios.get(`/api/v1/users/${userId}`);
+      const userResponse = await api.get(`/api/v1/users/${userId}`);
       setUser(userResponse.data);
       
       // Fetch matches (placeholder for now - will be implemented in Stage 4)
